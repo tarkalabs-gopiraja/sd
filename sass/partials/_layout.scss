@@ -176,6 +176,10 @@ input[type="text"]{
                 text-align: center;
                 justify-content: center;
                 line-height: 22px;
+                
+                &:hover{
+                    @include box-shadow(0 8px 16px 0 rgba($dark_color,0.10));
+                }
             }
         }
     }
