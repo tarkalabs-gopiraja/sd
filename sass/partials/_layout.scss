@@ -121,6 +121,10 @@ input[type="text"]{
             right: -9%;
         }
         
+        & > div:first-child{
+            width: 470px;
+        }
+        
         & h1{
             margin: 0 0 45px;
         }
@@ -136,7 +140,7 @@ input[type="text"]{
             
             & > img{
                 position: absolute;
-                top: -7px;
+                top: -4px;
                 right: 20px;
             }
         }

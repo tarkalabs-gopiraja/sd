@@ -202,42 +202,46 @@ input[type="text"]:focus {
   right: -9%;
 }
 /* line 124, ../../sass/partials/_layout.scss */
+.wrapper .hero-section > div:first-child {
+  width: 470px;
+}
+/* line 128, ../../sass/partials/_layout.scss */
 .wrapper .hero-section h1 {
   margin: 0 0 45px;
 }
-/* line 128, ../../sass/partials/_layout.scss */
+/* line 132, ../../sass/partials/_layout.scss */
 .wrapper .hero-section .search-input {
   position: relative;
 }
-/* line 131, ../../sass/partials/_layout.scss */
+/* line 135, ../../sass/partials/_layout.scss */
 .wrapper .hero-section .search-input input {
   font-size: 16px;
   width: 100%;
   padding: 20px;
 }
-/* line 137, ../../sass/partials/_layout.scss */
+/* line 141, ../../sass/partials/_layout.scss */
 .wrapper .hero-section .search-input > img {
   position: absolute;
-  top: -7px;
+  top: -4px;
   right: 20px;
 }
-/* line 145, ../../sass/partials/_layout.scss */
+/* line 149, ../../sass/partials/_layout.scss */
 .wrapper .section {
   margin: 0 auto;
   max-width: 85%;
 }
-/* line 149, ../../sass/partials/_layout.scss */
+/* line 153, ../../sass/partials/_layout.scss */
 .wrapper .section .section-header {
   display: flex;
   justify-content: space-between;
 }
-/* line 154, ../../sass/partials/_layout.scss */
+/* line 158, ../../sass/partials/_layout.scss */
 .wrapper .section .service-pills {
   margin: 0 -15px;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 159, ../../sass/partials/_layout.scss */
+/* line 163, ../../sass/partials/_layout.scss */
 .wrapper .section .service-pills > a {
   display: flex;
   background: #ffffff;
