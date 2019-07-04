@@ -1,5 +1,4 @@
 @media screen and (max-width: 1200px) {
-  
     .wrapper .hero-section > div:first-child{
         width: auto;
         max-width: 470px;
@@ -10,6 +9,21 @@
                 display: none;
             }
         }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wrapper .container{
+        min-width: inherit;
+    }
+    
+    .wrapper .hero-section h1{    
+        margin-bottom: 15px;
+    }
+    
+    h1{
+        font-size: 30px;
+        line-height: 36px;
     }
   
 }
