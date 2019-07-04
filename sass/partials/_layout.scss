@@ -59,6 +59,7 @@ input[type="text"]{
     background-position: top right;
     min-height: 100vh;
     position: relative;
+    overflow: hidden;
     
     & .container{
         max-width: 1200px;
