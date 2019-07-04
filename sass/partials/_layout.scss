@@ -16,6 +16,16 @@ body, html{
     @include box-sizing(border-box);
 }
 
+::selection{
+    background-color: $brand_aqua;
+    color: $lighter_color;
+}
+
+a{
+    @include transition-property(all);
+    @include transition-duration(.3s);
+}
+
 img{
     max-width: 100%;
 }
@@ -55,7 +65,7 @@ input[type="text"]{
     padding: 30px;
     margin: 0 auto;
     background: $lighter_color url('../images/blue_box@2x.png') no-repeat;
-    background-size: 660px;
+    background-size: 661px;
     background-position: top right;
     min-height: 100vh;
     position: relative;
@@ -65,6 +75,11 @@ input[type="text"]{
         max-width: 1200px;
         min-width: 960px;
         margin: 0 auto;
+    }
+    
+    & .spaced_wrapper{
+        margin: 0 auto;
+        max-width: 85%;
     }
     
     & .header{
@@ -97,7 +112,6 @@ input[type="text"]{
         justify-content: space-between;
         align-items: center;
         margin: 30px auto;
-        max-width: 85%;
         position: relative;
         
         &:before{
@@ -147,8 +161,7 @@ input[type="text"]{
     }
     
     & .section{
-        margin: 0 auto;
-        max-width: 85%;
+        margin-bottom: 30px;
         
         & .section-header{
             display: flex;
@@ -159,6 +172,18 @@ input[type="text"]{
             margin: 0 -15px;
             display: flex;
             flex-wrap: wrap;
+            position: relative;
+            
+            &:before{
+                content: "";
+                width:301px;
+                height: 368px;
+                position: absolute;
+                background: url('../images/triangle@2x.png') no-repeat;
+                background-size: 100%;
+                top: 40px;
+                left: -8%;
+            }
             
             & > a{
                 display: flex;
@@ -176,11 +201,63 @@ input[type="text"]{
                 text-align: center;
                 justify-content: center;
                 line-height: 22px;
+                position: relative;
                 
                 &:hover{
                     @include box-shadow(0 8px 16px 0 rgba($dark_color,0.10));
                 }
             }
         }
+    }
+    
+    & .contact{
+        
+        & > div{
+            display: flex;
+            margin: 30px 0 15px;
+            
+            & address{
+                flex: .4; 
+                margin-right: 30px;
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 15px;
+            }
+
+            & iframe{
+                flex: .8;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    
+    & .social-links{
+        background: rgba($dark_color, .07);
+        margin: 0 -30px 45px;
+        
+        & .container{
+            display: flex;
+            
+            & a{
+                font-size: 25px;
+                color: rgba($dark_color, 0.35);
+                text-align: center;
+                text-decoration: none;
+                padding: 60px;
+                flex: 1;
+
+                &:hover{
+                    background: rgba($dark_color, .07);
+                }
+            }
+        }
+    }
+    
+    & .copyright{
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
     }
 }
