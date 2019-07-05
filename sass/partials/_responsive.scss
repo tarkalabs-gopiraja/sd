@@ -27,3 +27,124 @@
     }
   
 }
+
+
+@media screen and (min-width: 768px) {
+    .mobile-only{
+        display: none !important;
+    }
+  
+}
+
+@media screen and (max-width: 768px) {
+    .desktop{
+        display: none !important;
+    }
+    
+    .wrapper{
+        & .spaced_wrapper{
+            max-width: 100%;
+        }
+        
+        & .container{
+            min-width: inherit;
+
+            & .header{
+                & a{
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+        
+        & .hero-section{
+            flex-direction: column-reverse;
+            margin: 30px 0 105px;
+
+            & .search-input input{
+                border-color: $lighter_color;
+            }
+
+            & h1{
+                font-size: 32px;
+                line-height: 38px;
+                margin-bottom: 15px;
+                text-align: center;
+                color: $lighter_color;
+            }
+
+            &:after, &:before{
+                display: none;
+            }
+
+            & > div{
+                &:first-child{
+                    margin-right: 0;
+                }
+            }
+
+            & .hero-image{
+                &:after{
+                    background: $brand_aqua;
+                    height: 445px;
+                }
+                &:before{
+                    content: "";
+                    background: url(../images/hero-smiley.svg) no-repeat;
+                    background-size: 100vw;
+                    position: absolute;
+                    left: -30px;
+                    bottom: -70px;
+                    width: 100vw;
+                    height: 100vw;
+                    z-index: 1;
+                }
+            }
+        }
+        
+        & .section{
+            & .section-header{
+                & h2{
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    @include opacity(.45);
+                    font-weight: bold;
+                }
+            }
+            
+            & .service-pills{
+                margin-top: 15px;
+
+                &:before{
+                    display: none;
+                }
+
+                & > a{
+                    display: inline-block;
+                    border: none;
+                    background: none;
+                    @include box-shadow(none);
+                    width: 100%;
+                    height: auto;
+                    text-align: left;
+                    padding: 0 60px 0 0;
+                    position: relative;
+                    
+                    &:after{
+                        content: "\f105";
+                        position: absolute;
+                        right: 0;
+                        top: 5px;
+                        font: normal normal normal 12px/1 FontAwesome;
+                    }
+                }
+            }
+        }
+        
+        & .copyright{
+            justify-content: center;
+            margin-top: 145px;
+        }
+    }
+  
+}
